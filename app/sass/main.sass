@@ -1,0 +1,76 @@
+@import "vars"
+
+::placeholder
+	color: #666
+
+::selection
+	background-color: $accent
+	color: #fff
+
+*
+	margin: 0
+	padding: 0
+
+body
+	font-size: 16px
+	min-width: 320px
+	position: relative
+	line-height: 1.65
+	font-family: $default-font
+	overflow-x: hidden
+	color: $text
+	input, textarea
+		border: #666 1px solid
+		outline: none
+		&:focus:required:invalid
+			border-color: red
+		&:required:valid
+			border-color: green
+
+.container
+	max-width: 1170px
+	padding: 0 15px
+	width: 100%
+	margin: 0 auto
+
+.btn a
+	color: #ffffff
+	font-weight: bold
+	font-size: 14px
+	text-transform: uppercase
+	display: inline-block
+	background-color: $main-color
+	line-height: 1
+	text-decoration: none
+	padding: 19px 37px
+
+.section
+	padding: 140px 0 115px
+	&-title
+		text-align: center
+		max-width: 1004px
+		width: 100%
+		margin: 0 auto
+		&-h2
+			h2
+				color: #222222
+				font-size: 35px
+				font-weight: 600
+				line-height: 1
+		&-border
+			background-image: url("../img/Sep.png")
+			background-repeat: no-repeat
+			background-position: center
+			background-size: auto
+			padding: 18px 0
+			margin: 0 auto
+			height: 23px
+			width: 109px
+		&-text
+			p
+				color: #888888
+				font-size: 14px
+				font-family: $poppins-font
+
+@import "header"
+@import "main-page"

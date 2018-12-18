@@ -1,0 +1,98 @@
+.top-line
+  //background: linear-gradient( #2c4e8d 30%, $main-color 70%)
+  background: linear-gradient(-45deg,$main-color 30%,#2c4e8d 30%)
+  height: 55px
+  display: flex
+  align-items: center
+  &-wrap
+    display: flex
+    justify-content: space-between
+    align-items: center
+  &-soc ul
+    display: flex
+    list-style-type: none
+    li
+      padding-right: 28px
+      a
+        color: #ffffff
+  &-dopnav ul
+    display: flex
+    list-style-type: none
+    li a
+      color: #fff
+      font-size: 14px
+      font-weight: 700
+      text-decoration: none
+      transition: 0.3s
+      &:hover
+        text-decoration: underline
+        transition: 0.3s
+
+.top-header
+  border-bottom: 1px solid #ebebeb
+  &-logo img
+    display: block
+  &-wrap
+    display: flex
+    align-items: center
+    padding: 30px 0 38px
+    justify-content: space-between
+  &-info
+    margin-left: 70px
+    padding-left: 56px
+    margin-top: 15px
+    background-repeat: no-repeat
+    background-position: left
+    &:first-child
+      margin-left: 0
+    &.hours
+      background-image: url("../img/i-clock.png")
+    &.call-us
+      background-image: url("../img/i-phone.png")
+    &.mail-us
+      background-image: url("../img/i-mail.png")
+    &-wrap
+      display: flex
+      justify-content: space-between
+      h3
+        color: #222222
+        font-family: 'Poppins', sans-serif
+        line-height: 1
+        margin: 0
+      p,a
+        font-family: 'Open Sans', sans-serif
+        font-size: 14px
+        color: #777777
+        text-decoration: none
+        line-height: 1
+        margin-top: 7px
+        transition: 0.3s
+      a:hover
+        color: $main-color
+        transition: 0.3s
+
+.top-nav
+  ul
+    list-style-type: none
+    display: flex
+    li
+      line-height: 1
+      margin: 0 30px
+      &:first-child
+        margin-left: 0
+      &:last-child
+        margin-right: 0
+      a
+        color: #222222
+        font-size: 14px
+        font-weight: bold
+        line-height: 1
+        text-decoration: none
+        text-transform: uppercase
+        display: inline-block
+        padding: 23px 5px 5px
+        margin-bottom: 24px
+        border-top: 2px solid transparent
+        &.active,
+        &:hover
+          border-top: 2px solid #51dc3c

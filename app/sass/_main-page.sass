@@ -1,0 +1,129 @@
+.slider
+  &-img img
+    display: block
+  &-block
+    position: relative
+    .container
+      position: absolute
+      top: 0
+      left: 0
+      bottom: 0
+      right: 0
+      margin: auto
+      display: flex
+      align-items: center
+
+  &-container
+    max-width: 1920px
+    width: 100%
+    margin: 0 auto
+  &-text
+    background-image: url("../img/bg-slider-text.png")
+    background-repeat: no-repeat
+    background-position: center
+    position: relative
+    width: 730px
+    height: 396px
+    left: -63px
+    padding: 75px 63px
+    box-sizing: border-box
+    &-first
+      color: #777
+      font-size: 14px
+      font-weight: bold
+      padding: 10px 0
+    &-second
+      color: #fff
+      font-size: 36px
+      font-weight: bold
+      line-height: 1.5
+    .btn
+      padding-top: 30px
+
+.section-services
+  &-wrap
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-between
+    padding-top: 80px
+  &-block
+    width: 30%
+    padding-left: 98px
+    box-sizing: border-box
+    position: relative
+    h3
+      line-height: 1
+      color: #222
+      font-size: 18px
+      padding-bottom: 15px
+    p
+      font-size: 14px
+      font-family: $poppins-font
+      color: #888888
+    &:nth-child(-n+3)
+      margin-bottom: 55px
+    &:before
+      content: ""
+      position: absolute
+      left: 0
+      top: 0
+    &.services-6
+      &:before
+        content: ""
+        background-image: url("../img/services-6.png")
+        background-repeat: no-repeat
+        background-position: center center
+        border-right: 1px solid $main-color
+        width: 80px
+        height: 45px
+        position: absolute
+    &.services-5
+      &:before
+        content: ""
+        background-image: url("../img/services-5.png")
+        background-repeat: no-repeat
+        background-position: center center
+        border-right: 1px solid $main-color
+        width: 80px
+        height: 45px
+        position: absolute
+    &.services-4
+      &:before
+        content: ""
+        background-image: url("../img/services-4.png")
+        background-repeat: no-repeat
+        background-position: center center
+        border-right: 1px solid $main-color
+        width: 80px
+        height: 45px
+        position: absolute
+    &.services-3
+      &:before
+        content: ""
+        background-image: url("../img/services-3.png")
+        background-repeat: no-repeat
+        background-position: center center
+        border-right: 1px solid $main-color
+        width: 80px
+        height: 45px
+        position: absolute
+    &.services-2
+      &:before
+        content: ""
+        background-image: url("../img/services-2.png")
+        background-repeat: no-repeat
+        background-position: center center
+        border-right: 1px solid $main-color
+        width: 80px
+        height: 45px
+        position: absolute
+    &.services-1
+      &:before
+        content: ""
+        background-image: url("../img/services-1.png")
+        background-repeat: no-repeat
+        background-position: center center
+        border-right: 1px solid $main-color
+        width: 80px
+        height: 45px
+        position: absolute
