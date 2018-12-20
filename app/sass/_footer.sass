@@ -1,0 +1,187 @@
+#footer
+  background-color: #192546
+  color: #ffffff
+  .footer-copy
+    p
+      font-size: 14px
+    &-wrap
+      display: flex
+      align-items: center
+      justify-content: space-between
+    &-sec
+      background-color: #121b33
+      padding: 20px 0 28px
+      p,a
+        color: #ffffff
+        font-size: 14px
+        text-decoration: none
+        transition: 0.3s
+      ul
+        list-style-type: none
+        display: flex
+        li
+          border-left: 1px solid #fff
+          padding: 0 10px
+          line-height: 1
+          &:first-child
+            border-left: none
+          a:hover
+            color: $main-color
+            transition: 0.3s
+
+  .footer-info
+    padding-left: 56px
+    background-repeat: no-repeat
+    background-position: left
+    &.hours
+      background-image: url("../img/i-clock.png")
+    &.call-us
+      background-image: url("../img/i-phone.png")
+    &.mail-us
+      background-image: url("../img/i-mail.png")
+    h3
+      font-family: $poppins-font
+      font-size: 16px
+      font-weight: 700
+    p,a
+      font-size: 14px
+      color: #fff
+      text-decoration: none
+      transition: 0.3s
+    a:hover
+      color: $main-color
+      transition: 0.3s
+    &-wrap
+      display: flex
+      align-items: center
+      padding: 38px 0 30px
+      justify-content: space-between
+    &-sec
+      border-bottom: 1px solid #303b59
+
+  .footer-dop
+    &-sec
+      padding: 43px 0 100px
+      > div
+        display: flex
+        justify-content: space-between
+    &-block
+      &.contacts
+        max-width: 330px
+        width: 100%
+        .contacts-text
+          padding-top: 10px
+          padding-bottom: 20px
+          border-bottom: 1px solid #35405c
+          p
+            color: #cccccc
+            font-size: 14px
+            line-height: 1.6
+            font-family: $poppins-font
+        .contacts-info
+          padding-top: 20px
+          p
+            padding-bottom: 5px
+          p,a
+            font-size: 15px
+            color: #ffffff
+            transition: 0.3s
+            text-decoration: none
+          a:hover
+            color: $main-color
+            transition: 0.3s
+        .contacts-soc
+          padding-top: 15px
+          ul
+            display: flex
+            list-style-type: none
+            li
+              margin-left: 20px
+              &:first-child
+                margin-left: 0
+              a i
+                color: #ffffff
+                transition: 0.3s
+                &:hover
+                  color: $main-color
+                  transition: 0.3s
+      &.services
+        max-width: 280px
+        width: 100%
+        .services-nav
+          ul
+            list-style-type: none
+            margin: 0
+            padding: 0
+            li
+              margin-top: 16px
+              line-height: 1
+              a
+                font-size: 14px
+                line-height: 1
+                color: #ffffff
+                text-decoration: none
+                transition: 0.3s
+                &:hover
+                  color: $main-color
+                  transition: 0.3s
+      &.posts
+        .footer-posts
+          ul
+            list-style-type: none
+            li
+              padding: 20px 0
+              border-bottom: 1px solid #303b59
+              box-sizing: border-box
+              &:last-child
+                padding-bottom: 0
+                border-bottom: none
+              img
+                display: block
+                max-width: 100%
+          &-text
+            padding-left: 10px
+          &-block
+            display: flex
+            align-items: center
+            p.date
+              color: $main-color
+              font-size: 12px
+              font-family: $poppins-font
+            .h3
+              padding-bottom: 12px
+              line-height: 1
+              a
+                color: #fefcfc
+                font-size: 20px
+                font-weight: normal
+                text-decoration: none
+                transition: 0.3s
+                &:hover
+                  color: $main-color
+                  transition: 0.3s
+      .h3-block
+        padding: 23px 0
+        border-bottom: 1px solid #35405c
+        position: relative
+        &:before
+          content: ""
+          width: 42px
+          border-bottom: 2px solid #fff
+          position: absolute
+          left: 0
+          bottom: -1px
+        .footer-dop-h3
+          font-size: 17px
+          line-height: 1
+          margin: 0
+
+.services-nav ul
+  position: relative
+  left: -12px
+  li
+    i
+      transition: 0.3s
+      color: $main-color
+    a
+      margin-left: 5px

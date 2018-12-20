@@ -198,11 +198,16 @@
   &-block
     max-width: 372px
     width: 100%
-    h3
+    h3 a
       font-size: 20px
       color: #222222
       padding-bottom: 4px
+      text-decoration: none
       border-bottom: 1px solid #e4e4e4
+      transition: 0.3s
+      &:hover
+        color: $main-color
+        transition: 0.3s
   .block-timble img
     display: block
     max-width: 100%
@@ -210,10 +215,15 @@
     display: flex
     position: relative
     padding: 8px 0
+    i
+      color: #51dc3c
+      padding-right: 5px
     p
       font-family: $poppins-font
       font-size: 12px
       color: #888
+      &.block-info-comm
+        margin-left: 10px
       &.block-info-date
         background-color: $main-color
         color: #fff
@@ -224,10 +234,33 @@
         text-align: center
         position: absolute
         bottom: -21px
-        right: 0
+        right: 22px
   .block-text
     padding-top: 10px
     p
       color: #888888
       font-size: 14px
       font-family: $poppins-font
+
+.section-about
+  padding: 90px 0
+  background: linear-gradient(-90deg,#2c4e8d 50%,$main-color 50%)
+  &-wrap
+    display: flex
+    align-items: center
+  &-text
+    .btn
+      padding-top: 54px
+    .section-title
+      padding-left: 75px
+      box-sizing: border-box
+      text-align: left
+      &-border
+        background-image: url(../img/Sec-white.png)
+        margin: 0
+      &-text p
+        color: #cccccc
+    h2
+      color: #ffffff
+      font-size: 35px
+
