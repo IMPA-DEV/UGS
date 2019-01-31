@@ -72,6 +72,8 @@
         transition: 0.3s
 
 .top-nav
+  &.home
+    box-shadow: 0px 7px 18px rgba(0, 0, 0, 0.24)
   ul
     list-style-type: none
     display: flex
@@ -96,3 +98,23 @@
         &.active,
         &:hover
           border-top: 2px solid #51dc3c
+
+.breadcrumbs
+  position: absolute
+  width: 100%
+  left: 0
+  right: 0
+  padding: 40px 0 25px
+  ul
+    list-style-type: none
+    display: flex
+    li
+      margin-right: 10px
+      color: #222222
+      a
+        color: #2c4e8d
+        font-size: 14px
+        transition: 0.3s
+        &:hover
+          color: $main-color
+          transition: 0.3s
