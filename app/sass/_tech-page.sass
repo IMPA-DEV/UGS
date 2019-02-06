@@ -1,0 +1,53 @@
+.technology-content
+  background-color: #f8f8f8
+  background-repeat: no-repeat
+  background-size: cover
+  display: flex
+  align-items: center
+  height: 990px
+  > div
+    width: 50%
+
+  .technology-empty
+    height: inherit
+    background-size: cover
+    &.tech-1
+      background-image: url("../img/tech-1.jpg")
+      background-position: right
+    &.tech-2
+      background-image: url("../img/tech-2.jpg")
+      background-position: left
+
+.technology-about-wrap
+  max-width: 503px
+  margin-left: 65px
+  margin-right: 65px
+  h2
+    font-size: 25px
+    text-align: left
+  .section-title-border
+    margin: 0
+.technology-about
+  &.left
+    display: flex
+    justify-content: flex-end
+  &.right
+    display: flex
+    justify-content: flex-start
+  .tech-list
+    ul
+      list-style-type: none
+      li
+        display: flex
+        align-items: center
+        margin-bottom: 25px
+        &:last-child
+          margin-bottom: 0
+        img
+          padding-right: 15px
+        p
+          font-size: 14px
+          font-family: $poppins-font
+          color: #222222
+
+
